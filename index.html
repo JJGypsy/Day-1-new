@@ -17,15 +17,33 @@
         <li>Item 2</li>
         <li>Item 3</li>
       </ul>
-      <form>
+      <form action="#" onsubmit="return validateForm()">
         <label for="name">Name:</label><br />
         <input type="text" id="name" name="name" /><br /><br />
         <label for="email">Email:</label><br />
         <input type="email" id="email" name="email" /><br /><br />
         <label for="message">Message:</label><br />
         <textarea id="message" name="message"></textarea><br /><br />
+        <input type="submit" value="Submit" />
       </form>
+      <button onclick="changeText()">Click Me!</button>
+      <p id="demo">This is a paragraph.</p>
     </main>
     <footer>&copy; 2023 My Website</footer>
+    <script>
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        if (name == "" || email == "") {
+          alert("Name and email must be filled out");
+          return false;
+        }
+        return true;
+      }
+
+      function changeText() {
+        document.getElementById("demo").innerHTML = "You clicked the button!";
+      }
+    </script>
   </body>
 </html>
