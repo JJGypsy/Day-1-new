@@ -3,18 +3,18 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  background-color: #1dad5e;
+  background-color: #f0f0f0;
 }
 header,
 footer {
   background-color: #333;
-  color: rgb(99, 29, 29);
+  color: white;
   padding: 1rem;
   text-align: center;
   width: 100%;
 }
 main {
-  background-color: rgb(79, 64, 163);
+  background-color: white;
   padding: 2rem;
   width: 60%;
 }
